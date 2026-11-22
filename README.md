@@ -1,4 +1,10 @@
-# OpenCore-EFI-for-NUC8i7HVK
+# OpenCore-EFI-for-NUC8i7HVK — US English
+
+This fork sets the installer language and keyboard to US English for the Intel NUC8i7HVK. OpenCore clears the previous firmware value for `prev-lang:kbd` and sets it to `en-US:0` at each boot.
+
+To update an installer USB that already uses the same upstream EFI revision (`d516d3d`), replace `EFI/OC/config.plist` on its EFI System Partition with the file from this fork. Eject the USB and boot from it again. The installer volume can be reused. The configuration has passed plist validation. An English-language boot on hardware is pending verification.
+
+[Original EFI and maintainer notes](https://github.com/ZEQ-Avidia/OpenCore-EFI-for-NUC8i7HVK)
 Bootable OC EFI that Functional with macOS 26 Tahoe and macOS 15 Sequoia
 
 ---
